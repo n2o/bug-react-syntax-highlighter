@@ -1,11 +1,15 @@
 (ns playground.core
-  (:require [goog.dom :as gdom]
+  (:require ["react-syntax-highlighter" :refer [Prism]]
+            ["react-syntax-highlighter/dist/esm/styles/prism" :refer [darcula
+                                                                      github]]
+            [goog.dom :as gdom]
             [reagent.dom]))
 
 (defn- main []
   [:main.container.mx-auto.pt-5
    [:h1 "Welcome to your app"]
-   [:p "Foo"]])
+   [:> Prism {:language "clojure" :style github}
+    "(welcome! :you)"]])
 
 ;; -----------------------------------------------------------------------------
 
