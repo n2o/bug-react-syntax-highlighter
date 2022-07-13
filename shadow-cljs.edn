@@ -6,6 +6,6 @@
            :modules {:main {:init-fn playground.core/init}}
            :js-options {:entry-keys ["module" "browser" "main"]}
            :output-dir "public/js/compiled"
-           :compiler-options {:optimizations :simple}
+           :release {}:compiler-options {:optimizations :simple}
            :asset-path "/js/compiled"
            :devtools {:preloads [devtools.preload]}}}}
