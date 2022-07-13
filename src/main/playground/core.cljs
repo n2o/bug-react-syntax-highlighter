@@ -1,7 +1,6 @@
 (ns playground.core
   (:require ["react-syntax-highlighter" :refer [Prism]]
-            ["react-syntax-highlighter/dist/esm/styles/prism" :refer [darcula
-                                                                      github]]
+            ["react-syntax-highlighter/dist/esm/styles/prism" :refer [github]]
             [goog.dom :as gdom]
             [reagent.dom]))
 
