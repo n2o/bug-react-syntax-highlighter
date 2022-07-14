@@ -1,5 +1,5 @@
 (ns playground.core
-  (:require ["highlight.js/lib/highlight" :as hljs]
+  (:require ["highlight.js/lib/core" :as hljs]
             ["highlight.js/lib/languages/clojure" :as hl-clojure]
             ["react-syntax-highlighter" :refer [Prism]]
             ["react-syntax-highlighter/dist/esm/styles/prism" :refer [github]]
