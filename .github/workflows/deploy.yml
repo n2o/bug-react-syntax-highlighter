@@ -30,8 +30,8 @@ jobs:
           yarn install
           yarn build
 
-      # - name: Deploy 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     BRANCH: gh-pages
-      #     FOLDER: resources/public # The folder the action should deploy.
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          BRANCH: gh-pages
+          FOLDER: public # The folder the action should deploy.
