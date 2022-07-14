@@ -1,8 +1,7 @@
-# Template to create a ClojureScript + Reagent + shadow-cljs project
+# react-syntax-highlighter + ClojureScript
 
-This project creates a fully functional ClojureScript project for you, using the
-stack of ClojureScript, reagent and shadow-cljs. CSS is built using tailwindcss,
-but you can easily replace it if you like.
+Here is how to use the [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+with ClojureScript, reagent and shadow-cljs. Check the [core.cljs](src/main/playground/core.cljs) on how to use it in your code.
 
 ## Production
 
