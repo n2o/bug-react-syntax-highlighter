@@ -1,8 +1,12 @@
 (ns playground.core
-  (:require ["react-syntax-highlighter" :refer [Prism]]
+  (:require ["highlight.js/core" :as hljs]
+            ["highlight.js/languages/clojure" :as hl-clojure]
+            ["react-syntax-highlighter" :refer [Prism]]
             ["react-syntax-highlighter/dist/esm/styles/prism" :refer [github]]
             [goog.dom :as gdom]
             [reagent.dom]))
+
+(hljs/registerLanguage "clojure" hl-clojure)
 
 (defn- main []
   [:main.container.mx-auto.pt-5
