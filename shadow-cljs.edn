@@ -4,7 +4,8 @@
  :builds {:app
           {:target :browser
            :modules {:main {:init-fn playground.core/init}}
-           :js-options {:resolve {"highlight.js" {:target :npm :require "highlight.js/lib/core"}}}
+           :js-options {:resolve {"highlight.js" {:target :npm :require "highlight.js/lib/core"}
+                                  "lowlight" {:target :npm :require "lowlight/lib/core"}}}
            :output-dir "public/js/compiled"
            :asset-path "/js/compiled"
            :devtools {:preloads [devtools.preload]}}}}
