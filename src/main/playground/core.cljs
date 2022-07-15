@@ -1,6 +1,6 @@
 (ns playground.core
-  (:require ["react-syntax-highlighter" :rename {PrismLight SyntaxHighlighter}]
-            ["react-syntax-highlighter/dist/esm/languages/prism/clojure$default" :as clojure-prism]
+  (:require ["react-syntax-highlighter/dist/esm/languages/prism/clojure$default" :as clojure-prism]
+            ["react-syntax-highlighter/dist/esm/prism-light.js$default" :as SyntaxHighlighter]
             ["react-syntax-highlighter/dist/esm/styles/prism/one-light$default" :as light-theme]
             [goog.dom :as gdom]
             [reagent.dom]))
