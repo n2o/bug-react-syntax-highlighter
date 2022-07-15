@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "shadow:watch": "yarn shadow-cljs watch app",
-    "shadow:production": "yarn shadow-cljs release app",
+    "shadow:production": "yarn shadow-cljs release app --debug",
     "tailwind:watch": "yarn tailwindcss -i ./public/css/tailwind.css -o ./public/css/compiled.css --watch",
     "tailwind:production": "yarn tailwindcss -i ./public/css/tailwind.css -o ./public/css/compiled.css --minify",
     "dev": "yarn run-p -l *:watch",
