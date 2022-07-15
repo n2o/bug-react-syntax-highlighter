@@ -1,16 +1,16 @@
 (ns playground.core
-  (:require ["react-syntax-highlighter" :rename {Light SyntaxHighlighter}]
-            ["react-syntax-highlighter/dist/esm/languages/hljs/clojure$default" :as clojure-js]
-            ["react-syntax-highlighter/dist/esm/styles/hljs" :refer [github]]
+  (:require ["react-syntax-highlighter" :rename {PrismLight SyntaxHighlighter}]
+            ["react-syntax-highlighter/dist/esm/languages/prism/clojure$default" :as clojure-prism]
+            ["react-syntax-highlighter/dist/esm/styles/prism/one-light$default" :as light-theme]
             [goog.dom :as gdom]
             [reagent.dom]))
 
-(.registerLanguage SyntaxHighlighter "clojure", clojure-js)
+(.registerLanguage SyntaxHighlighter "clojure" clojure-prism)
 
 (defn- main []
   [:main.container.mx-auto.pt-5
    [:h1 "Welcome to your app"]
-   [:> SyntaxHighlighter {:language "clojure" :style github}
+   [:> SyntaxHighlighter {:language "clojure" :style light-theme}
     "(welcome! :you)"]])
 
 ;; -----------------------------------------------------------------------------
