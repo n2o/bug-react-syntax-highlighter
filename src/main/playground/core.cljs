@@ -5,6 +5,7 @@
             [goog.dom :as gdom]
             [reagent.dom]))
 
+;; Register your languages here
 (.registerLanguage SyntaxHighlighter "clojure" clojure-prism)
 
 (defn- main []
